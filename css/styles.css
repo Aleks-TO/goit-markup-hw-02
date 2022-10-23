@@ -1,7 +1,7 @@
 :root {
   --primary-text: #212121;
   --secondary-text: #757575;
-  --text-color: #2196f3;
+  --change-color: #2196f3;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -12,6 +12,9 @@ body {
 .list {
   list-style: none;
 }
+ul {
+  list-style: none;
+}
 /* --------HEADER---------- */
 .header {
   background-color: rgb(116, 190, 122);
@@ -20,7 +23,7 @@ body {
   color: #000;
 }
 .logo-part {
-  color: var(--text-color);
+  color: var(--change-color);
 }
 .logo-link,
 .logo-part {
@@ -44,7 +47,7 @@ body {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--text-color);
+  color: var(--change-color);
 }
 .authoriz-mail,
 .authoriz-tel {
@@ -58,8 +61,9 @@ body {
 .authoriz-mail:hover,
 .authoriz-tel:focus,
 .authoriz-tel:hover {
-  color: var(--text-color);
+  color: var(--change-color);
 }
+/* -----------------main------------------ */
 .hero-text {
   font-weight: 900;
   font-size: 44px;
@@ -74,8 +78,6 @@ body {
   background-color: gray;
 }
 .hero-btn {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -85,6 +87,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+  background-color: #2196f3;
 }
 .preference-text h3 {
   font-weight: 700;
@@ -92,7 +95,6 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--primary-text);
 }
 .preference-text p {
@@ -124,7 +126,7 @@ body {
   color: var(--primary-text);
 }
 .team-item span {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: calc(19 / 16);
 
@@ -135,10 +137,27 @@ body {
 footer {
   background-color: rgb(185, 126, 126);
 }
+footer > .logo-link {
+  color: #fff;
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+footer .authoriz-mail,
+footer .authoriz-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
 
 /* ------portfolio.html------ */
 .portfolio-btn {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -149,10 +168,10 @@ footer {
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background-color: var(--text-color);
+  background-color: var(--change-color);
 }
 .portfolio-list h2 {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
@@ -160,7 +179,7 @@ footer {
   color: var(--primary-text);
 }
 .portfolio-list p {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
