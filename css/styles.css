@@ -150,6 +150,7 @@ footer > .logo-link {
 footer .authoriz-mail,
 footer .authoriz-tel {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -158,6 +159,7 @@ footer .authoriz-tel {
 
 /* ------portfolio.html------ */
 .portfolio-btn {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
